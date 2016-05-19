@@ -4,6 +4,7 @@
   </div>
     
 　<div class="panel-body">
+　  
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
         <%= message.age %>才
@@ -12,6 +13,7 @@
          <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
         )
       <br>
+      binding.pry
     <% end %>
   </div>
 </div>
